@@ -10,7 +10,6 @@
     html { scroll-behavior: smooth; }
     :focus-visible { outline: 3px solid #6366f1; outline-offset: 2px; border-radius: 8px; }
     #toTop { position: fixed; right: 1rem; bottom: 1rem; display: none; }
-    /* Lightbox */
     .lb-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,.75); display: none; align-items: center; justify-content: center; padding: 1rem; }
     .lb-backdrop.open { display: flex; }
     .lb-img { max-width: min(1100px, 96vw); max-height: 90vh; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,.5); }
@@ -27,12 +26,10 @@
   <meta name="keywords" content="VTOL, eVTOL, user manual, checklists, geofencing, maintenance, troubleshooting"/>
 </head>
 <body class="min-h-screen bg-gray-50 text-gray-800">
-  <!-- Skip -->
   <a href="#manual" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:bg-white focus:border focus:border-indigo-600 focus:rounded-lg focus:px-3 focus:py-2">
     Skip to How to Use this Manual
   </a>
 
-  <!-- Header -->
   <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-gray-200">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <div class="flex items-center gap-3">
@@ -56,7 +53,6 @@
     </div>
   </header>
 
-  <!-- Overview (unchanged except date above) -->
   <section id="overview" class="border-b border-gray-200 bg-white">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 grid lg:grid-cols-3 gap-8 items-center">
       <div class="lg:col-span-2">
@@ -91,7 +87,6 @@
     </div>
   </section>
 
-  <!-- TOC (added Photos link) -->
   <section class="bg-gray-50 border-b border-gray-200">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
       <h3 class="text-sm font-semibold text-gray-600 uppercase">On this page</h3>
@@ -99,9 +94,9 @@
         <a href="#ui-map" class="block rounded-xl border border-gray-200 bg-white p-3 hover:border-indigo-300 hover:shadow">Interface layout</a>
         <a href="#features" class="block rounded-xl border border-gray-200 bg-white p-3 hover:border-indigo-300 hover:shadow">Feature breakdown</a>
         <a href="#howto" class="block rounded-xl border border-gray-200 bg-white p-3 hover:border-indigo-300 hover:shadow">Step-by-step how-tos</a>
-        <a href="#screenshots" class="block rounded-xl border border-gray-200 bg-white p-3 hover:border-indigo-300 hover:shadow">Screenshots & diagrams</a>
-        <a href="#photos" class="block rounded-xl border border-gray-200 bg-white p-3 hover:border-indigo-300 hover:shadow">Photos & media</a>
-        <a href="#shortcuts" class="block rounded-xl border border-gray-200 bg-white p-3 hover:border-indigo-300 hover:shadow">Shortcuts & tips</a>
+        <a href="#screenshots" class="block rounded-xl border border-gray-200 bg-white p-3 hover:border-indigo-300 hover:shadow">Screenshots &amp; diagrams</a>
+        <a href="#photos" class="block rounded-xl border border-gray-200 bg-white p-3 hover:border-indigo-300 hover:shadow">Photos &amp; media</a>
+        <a href="#shortcuts" class="block rounded-xl border border-gray-200 bg-white p-3 hover:border-indigo-300 hover:shadow">Shortcuts &amp; tips</a>
         <a href="#troubleshooting" class="block rounded-xl border border-gray-200 bg-white p-3 hover:border-indigo-300 hover:shadow">Troubleshooting</a>
         <a href="#faq" class="block rounded-xl border border-gray-200 bg-white p-3 hover:border-indigo-300 hover:shadow">FAQs</a>
         <a href="#glossary" class="block rounded-xl border border-gray-200 bg-white p-3 hover:border-indigo-300 hover:shadow">Glossary</a>
@@ -109,7 +104,6 @@
     </div>
   </section>
 
-  <!-- Using the Manual -->
   <section id="manual" class="bg-white border-b border-gray-200">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 grid lg:grid-cols-3 gap-8">
       <div class="lg:col-span-2">
@@ -119,6 +113,7 @@
           safe usage, and troubleshooting. The manual has been designed so that it is simple to understand and frequently refers to our
           main control firmware that operators will use during planning, flight, and maintenance.
         </p>
+
         <div class="mt-6 grid sm:grid-cols-2 gap-4">
           <div class="rounded-2xl border border-gray-200 p-5 bg-gradient-to-b from-white to-gray-50">
             <h3 class="font-semibold text-indigo-700">Recommended Reading Order</h3>
@@ -129,6 +124,7 @@
               <li>Consult <span class="font-medium">Troubleshooting</span> to resolve issues quickly.</li>
             </ol>
           </div>
+
           <div class="rounded-2xl border border-gray-200 p-5 bg-gradient-to-b from-white to-gray-50">
             <h3 class="font-semibold text-indigo-700">Navigation Tips</h3>
             <ul class="mt-2 space-y-1 text-sm text-gray-700">
@@ -139,11 +135,13 @@
             </ul>
           </div>
         </div>
+
         <div class="mt-6 rounded-xl border border-indigo-200 bg-indigo-50 p-4 text-sm text-indigo-900">
           <p><span class="font-semibold">Firmware references:</span> When you see labels like <span class="font-medium">Planner → New Flight</span> or
             <span class="font-medium">Logs → Export</span>, they refer to the exact locations inside the SkyLift control firmware UI.</p>
         </div>
       </div>
+
       <aside class="rounded-2xl border border-gray-200 bg-gray-50 p-5">
         <h3 class="font-semibold">Quick Links</h3>
         <ul class="mt-3 space-y-2 text-sm">
@@ -159,11 +157,14 @@
     </div>
   </section>
 
-  <!-- UI Map (unchanged) -->
   <section id="ui-map" class="bg-white border-b border-gray-200">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
       <h2 class="text-xl sm:text-2xl font-bold">Interface Layout &amp; Navigation</h2>
-      <p class="mt-3 text-gray-700">SkyLift Console uses a tri-pane layout: Top bar (global actions), left Sidebar (modules), and the main Workspace.</p>
+      <p class="mt-3 text-gray-700">
+        SkyLift Console uses a tri-pane layout: Top bar (global actions), left Sidebar (modules), and the main Workspace
+        (planning, flight, and maintenance views).
+      </p>
+
       <div class="mt-6 rounded-2xl border border-gray-200 bg-gray-50 p-4">
         <svg viewBox="0 0 1000 560" class="w-full h-auto" role="img" aria-label="Console layout schematic">
           <rect x="10" y="10" width="980" height="540" rx="16" fill="#ffffff" stroke="#e5e7eb" />
@@ -181,12 +182,10 @@
     </div>
   </section>
 
-  <!-- Features (unchanged) -->
   <section id="features" class="bg-white border-b border-gray-200">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
       <h2 class="text-xl sm:text-2xl font-bold">Feature Breakdown</h2>
       <div class="mt-6 grid lg:grid-cols-3 gap-4">
-        <!-- ... keep your six feature cards exactly as before ... -->
         <div class="rounded-2xl border border-gray-200 p-5 bg-gradient-to-b from-white to-gray-50">
           <h3 class="font-semibold text-indigo-700">Pre-Flight &amp; Safety</h3>
           <ol class="mt-2 space-y-1 text-sm text-gray-700 list-decimal list-inside">
@@ -227,12 +226,10 @@
     </div>
   </section>
 
-  <!-- How-to (unchanged content) -->
   <section id="howto" class="bg-white border-b border-gray-200">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
       <h2 class="text-xl sm:text-2xl font-bold">Step-by-Step How-Tos</h2>
       <div class="mt-6 grid lg:grid-cols-2 gap-6">
-        <!-- two articles kept as you wrote them -->
         <article class="rounded-2xl border border-gray-200 bg-white p-5">
           <h3 class="font-semibold">Plan &amp; Launch a VTOL Flight</h3>
           <p class="mt-1 text-sm text-gray-700">From planning to safe transition and cruise, this procedure describes a standard commercial operation.</p>
@@ -268,45 +265,41 @@
     </div>
   </section>
 
-  <!-- Screenshots & Diagrams (expanded with more images) -->
+  <!-- Screenshots & Diagrams -->
   <section id="screenshots" class="bg-white border-b border-gray-200">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
       <h2 class="text-xl sm:text-2xl font-bold">Screenshots &amp; Diagrams</h2>
-      <p class="mt-2 text-gray-700 text-sm">Illustrative eVTOL images.</p>
+      <p class="mt-2 text-gray-700 text-sm">Click any image to expand.</p>
       <div class="mt-6 grid md:grid-cols-2 gap-6">
-        <!-- 1 -->
         <figure class="rounded-2xl border border-gray-200 bg-gray-50 p-3">
-          <img loading="lazy" src="C:\Users\saif\skylift-manual\VTOL-10_005sec_730w.gif"
-               alt="eVTOL in hover transitioning to forward flight" class="aspect-video w-full h-auto rounded-xl object-cover lb-src"
+          <img loading="lazy" src="assets/vtol-hover.avif"
+               alt="VTOL aircraft during hover and transition" class="aspect-video w-full h-auto rounded-xl object-cover lb-src"
                data-caption="VTOL Hover & Transition — tilt-prop dynamics during changeover." />
           <figcaption class="px-1 py-2">
             <p class="text-sm font-medium">VTOL Hover &amp; Transition</p>
             <p class="text-xs text-gray-600">Tilt-prop dynamics during changeover.</p>
           </figcaption>
         </figure>
-        <!-- 2 -->
         <figure class="rounded-2xl border border-gray-200 bg-gray-50 p-3">
-          <img loading="lazy" src="C:\Users\saif\skylift-manual\flight check.png"
+          <img loading="lazy" src="assets/flight-check.png"
                alt="Pre-flight ramp setup and checklist" class="aspect-video w-full h-auto rounded-xl object-cover lb-src"
-               data-caption="Pre-flight ramp with checklist & safety cones." />
+               data-caption="Pre-flight ramp with checklist & safety perimeter." />
           <figcaption class="px-1 py-2">
             <p class="text-sm font-medium">Pre-Flight on Ramp</p>
             <p class="text-xs text-gray-600">Checklist and staging area.</p>
           </figcaption>
         </figure>
-        <!-- 3 -->
         <figure class="rounded-2xl border border-gray-200 bg-gray-50 p-3">
-          <img loading="lazy" src="C:\Users\saif\skylift-manual\mission plan.png"
-               alt="Planner UI with waypoints and geofence polygon" class="aspect-video w-full h-auto rounded-xl object-cover lb-src"
+          <img loading="lazy" src="assets/mission-plan.png"
+               alt="Planner UI with mission waypoints and geofence" class="aspect-video w-full h-auto rounded-xl object-cover lb-src"
                data-caption="Planner UI — mission area, waypoints, and geofence polygon." />
           <figcaption class="px-1 py-2">
             <p class="text-sm font-medium">Planner UI</p>
             <p class="text-xs text-gray-600">Waypoints and geofencing.</p>
           </figcaption>
         </figure>
-        <!-- 4 -->
         <figure class="rounded-2xl border border-gray-200 bg-gray-50 p-3">
-          <img loading="lazy" src="C:\Users\saif\skylift-manual\flight data.jpg"
+          <img loading="lazy" src="assets/flight-data.jpg"
                alt="Flight monitor showing telemetry and warnings" class="aspect-video w-full h-auto rounded-xl object-cover lb-src"
                data-caption="Flight Monitor — telemetry, warnings, and RTH preview." />
           <figcaption class="px-1 py-2">
@@ -318,26 +311,15 @@
     </div>
   </section>
 
-  <!-- NEW: Photos & Media gallery -->
+  <!-- Photos & Media -->
   <section id="photos" class="bg-white border-b border-gray-200">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
       <h2 class="text-xl sm:text-2xl font-bold">Photos &amp; Media</h2>
       <p class="mt-2 text-gray-700 text-sm">Operational shots, hardware close-ups, and lab images. Click any photo to expand.</p>
 
-      <!-- Filter / tags (optional UX for later) -->
-      <div class="mt-4 flex flex-wrap gap-2 text-xs">
-        <span class="px-2 py-1 rounded-full bg-gray-100 border">All</span>
-        <span class="px-2 py-1 rounded-full bg-gray-100 border">Airframe</span>
-        <span class="px-2 py-1 rounded-full bg-gray-100 border">Electronics</span>
-        <span class="px-2 py-1 rounded-full bg-gray-100 border">Testing</span>
-        <span class="px-2 py-1 rounded-full bg-gray-100 border">Field Ops</span>
-      </div>
-
-      <!-- Gallery grid -->
       <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Card 1 -->
         <figure class="rounded-2xl border border-gray-200 bg-gray-50 p-3">
-          <img loading="lazy" src="C:\Users\saif\skylift-manual\drone.18.jpg"
+          <img loading="lazy" src="assets/drone.18.jpg"
                alt="Airframe assembly on bench" class="w-full h-48 object-cover rounded-xl lb-src"
                data-caption="Airframe assembly — carbon arms, tilt actuators, harness routing." />
           <figcaption class="px-1 py-2">
@@ -345,9 +327,9 @@
             <p class="text-xs text-gray-600">Tilt actuators & harness routing.</p>
           </figcaption>
         </figure>
-        <!-- Card 2 -->
+
         <figure class="rounded-2xl border border-gray-200 bg-gray-50 p-3">
-          <img loading="lazy" src="C:\Users\saif\skylift-manual\battery and esc.jpg"
+          <img loading="lazy" src="assets/battery-and-esc.jpg"
                alt="Battery and ESC bay layout" class="w-full h-48 object-cover rounded-xl lb-src"
                data-caption="Battery & ESC bay — cooling ducts and service access." />
           <figcaption class="px-1 py-2">
@@ -355,19 +337,19 @@
             <p class="text-xs text-gray-600">Cooling & service access.</p>
           </figcaption>
         </figure>
-        <!-- Card 3 -->
+
         <figure class="rounded-2xl border border-gray-200 bg-gray-50 p-3">
-          <img loading="lazy" src="C:\Users\saif\skylift-manual\rtk.jpg"
-               alt="Avionics stack with Pixhawk and RTK" class="w-full h-48 object-cover rounded-xl lb-src"
-               data-caption="Avionics stack — Pixhawk/PX4, RTK, power distribution." />
+          <img loading="lazy" src="assets/rtk.jpg"
+               alt="Avionics stack with RTK module" class="w-full h-48 object-cover rounded-xl lb-src"
+               data-caption="Avionics — PX4 stack with RTK positioning." />
           <figcaption class="px-1 py-2">
             <p class="text-sm font-medium">Avionics Stack</p>
             <p class="text-xs text-gray-600">PX4 + RTK module.</p>
           </figcaption>
         </figure>
-        <!-- Card 4 -->
+
         <figure class="rounded-2xl border border-gray-200 bg-gray-50 p-3">
-          <img loading="lazy" src="C:\Users\saif\skylift-manual\prop.jpg"
+          <img loading="lazy" src="assets/prop.jpg"
                alt="Propeller and hub close-up" class="w-full h-48 object-cover rounded-xl lb-src"
                data-caption="Propeller close-up — pitch match & balancing." />
           <figcaption class="px-1 py-2">
@@ -375,32 +357,50 @@
             <p class="text-xs text-gray-600">Pitch match & balancing.</p>
           </figcaption>
         </figure>
-        <!-- Card 5 -->
+
         <figure class="rounded-2xl border border-gray-200 bg-gray-50 p-3">
-          <img loading="lazy" src="C:\Users\saif\skylift-manual\hover vtol.jpg"
+          <img loading="lazy" src="assets/hover-vtol.jpg"
                alt="Hover test in field ops" class="w-full h-48 object-cover rounded-xl lb-src"
-               data-caption="Field ops — hover test with safety perimeter." />
+               data-caption="Field Ops — hover test with safety perimeter." />
           <figcaption class="px-1 py-2">
             <p class="text-sm font-medium">Field Ops — Hover</p>
             <p class="text-xs text-gray-600">Safety perimeter & logs.</p>
           </figcaption>
         </figure>
-        <!-- Card 6 -->
+
         <figure class="rounded-2xl border border-gray-200 bg-gray-50 p-3">
-          <img loading="lazy" src="C:\Users\saif\skylift-manual\holder.png"
-               alt="Payload mount and CG measurement" class="w-full h-48 object-cover rounded-xl lb-src"
+          <img loading="lazy" src="assets/holder.png"
+               alt="Payload holder and CG considerations" class="w-full h-48 object-cover rounded-xl lb-src"
                data-caption="Payload mount — CG measurement and gimbal isolation." />
           <figcaption class="px-1 py-2">
             <p class="text-sm font-medium">Payload Mount & CG</p>
-            <p class="text-xs text-gray-600">Gimbal isolation.</p>
+            <p class="text-xs text-gray-600">Gimbal isolation & mounts.</p>
           </figcaption>
         </figure>
-        <!-- Add more cards as needed -->
+
+        <figure class="rounded-2xl border border-gray-200 bg-gray-50 p-3">
+          <img loading="lazy" src="assets/VTOL-10_005sec_730w.gif"
+               alt="Animated VTOL test render" class="w-full h-48 object-cover rounded-xl lb-src"
+               data-caption="Animated test — VTOL 10ms step visual." />
+          <figcaption class="px-1 py-2">
+            <p class="text-sm font-medium">Animated Test</p>
+            <p class="text-xs text-gray-600">VTOL step render (GIF).</p>
+          </figcaption>
+        </figure>
+
+        <figure class="rounded-2xl border border-gray-200 bg-gray-50 p-3">
+          <img loading="lazy" src="assets/step-by-step.jpg"
+               alt="Step by step board or procedure overview" class="w-full h-48 object-cover rounded-xl lb-src"
+               data-caption="Procedure board — step-by-step overview." />
+          <figcaption class="px-1 py-2">
+            <p class="text-sm font-medium">Procedure Board</p>
+            <p class="text-xs text-gray-600">Step-by-step overview.</p>
+          </figcaption>
+        </figure>
       </div>
     </div>
   </section>
 
-  <!-- Shortcuts (unchanged) -->
   <section id="shortcuts" class="bg-white border-b border-gray-200">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
       <h2 class="text-xl sm:text-2xl font-bold">Shortcuts &amp; Productivity Tips</h2>
@@ -427,12 +427,10 @@
     </div>
   </section>
 
-  <!-- Troubleshooting (unchanged content) -->
   <section id="troubleshooting" class="bg-white border-b border-gray-200">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
       <h2 class="text-xl sm:text-2xl font-bold">Troubleshooting (Commercial Operations)</h2>
       <div class="mt-6 grid lg:grid-cols-2 gap-6">
-        <!-- your details blocks unchanged -->
         <details class="rounded-2xl border border-gray-200 bg-white p-5 group open:shadow-sm">
           <summary class="cursor-pointer list-none flex items-center justify-between">
             <span class="font-semibold">Aircraft won’t transition to forward flight</span>
@@ -486,7 +484,6 @@
     </div>
   </section>
 
-  <!-- FAQ & Glossary (unchanged) -->
   <section id="faq" class="bg-white border-b border-gray-200">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
       <h2 class="text-xl sm:text-2xl font-bold">Frequently Asked Questions</h2>
@@ -551,7 +548,6 @@
   <button id="toTop" class="rounded-full bg-indigo-600 text-white px-3 py-2 shadow hover:bg-indigo-500"
     aria-label="Back to top" title="Back to top">↑ Top</button>
 
-  <!-- Back-to-top -->
   <script>
     const toTop = document.getElementById('toTop');
     window.addEventListener('scroll', () => {
@@ -560,7 +556,6 @@
     toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   </script>
 
-  <!-- Active section highlighting -->
   <script>
     const sections = [...document.querySelectorAll('section[id]')];
     const links = [...document.querySelectorAll('nav a[href^="#"]')];
@@ -576,7 +571,6 @@
     sections.forEach(s => io.observe(s));
   </script>
 
-  <!-- Lightbox (tiny, accessible) -->
   <div class="lb-backdrop" id="lb" role="dialog" aria-modal="true" aria-label="Image preview">
     <div class="max-w-[96vw] text-center">
       <img class="lb-img" id="lbImg" alt="">
@@ -598,6 +592,7 @@
       lb.classList.add('open');
     }
     function closeLB() { lb.classList.remove('open'); lbImg.src=''; lbCap.textContent=''; }
+
     imgs.forEach(img => {
       img.style.cursor = 'zoom-in';
       img.addEventListener('click', () => openLB(img.src, img.alt, img.dataset.caption));
@@ -612,4 +607,3 @@
   <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
 </body>
 </html>
-
